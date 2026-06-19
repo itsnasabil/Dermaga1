@@ -37,17 +37,19 @@ with st.form('email_assistant_form'):
     st.markdown('**Masukkan data Anda**')
     col1, col2 = st.columns([2,2])
     with col1:
-        nama = st.text_input('Nama lengkap', placeholder='Contoh: Budi Santoso')
-        prodi = st.text_input('Program Studi / Prodi', placeholder='Contoh: Teknologi Informasi')
+        nama = st.text_input('Nama Mahasiswa', placeholder='Contoh: Budi Santoso')
+        jurusan = st.text_input('Jurusan', placeholder='Contoh: Teknologi Informasi')
     with col2:
-        universitas = st.text_input('Universitas / Institusi', placeholder='Contoh: Universitas Diponegoro')
-        kontak_opsional = st.text_input('Email pengirim (opsional)', placeholder='contoh@mail.com')
+        fakultas = st.text_input('Fakultas', placeholder='Contoh: Teknik')
+        universitas = st.text_input('Universitas / Perguruan Tinggi', placeholder='Contoh: Universitas Diponegoro')
+    
+    kontak_opsional = st.text_input('Email pengirim (opsional)', placeholder='contoh@mail.com')
 
     # Generate subject
     def _clean(s: str):
         return "_".join(s.strip().split()) if s and s.strip() else ''
 
-    subject = f"Permohonan Magang {_clean(nama)}_{_clean(prodi)}_{_clean(universitas)}" if nama or prodi or universitas else ''
+    subject = f"Permohonan Magang {_clean(nama)}_{_clean(jurusan)}_{_clean(fakultas)}_{_clean(universitas)}" if nama or jurusan or fakultas or universitas else ''
 
     st.markdown('\n')
     st.markdown('**Subject email (otomatis)**')
@@ -56,7 +58,7 @@ with st.form('email_assistant_form'):
     # Template email body
     template = f"""Yth. Tim Magang BPS Kota Semarang,
 
-Perkenalkan, saya {nama if nama else '[Nama Anda]'}, mahasiswa Program Studi {prodi if prodi else '[Prodi Anda]'} di {universitas if universitas else '[Universitas Anda]'}. Saya bermaksud mengajukan permohonan magang di BPS Kota Semarang.
+Perkenalkan, saya {nama if nama else '[Nama Anda]'}, mahasiswa {jurusan if jurusan else '[Jurusan Anda]'} di {fakultas if fakultas else '[Fakultas Anda]'}, {universitas if universitas else '[Universitas Anda]'}. Saya bermaksud mengajukan permohonan magang di BPS Kota Semarang.
 
 Sebagai lampiran bersama email ini, saya sertakan dokumen yang diperlukan sesuai ketentuan:
 - KTM / Surat Keterangan Kuliah Aktif
@@ -71,8 +73,9 @@ Demikian permohonan ini saya sampaikan. Besar harapan saya dapat diterima untuk 
 
 Hormat saya,
 {nama if nama else '[Nama Anda]'}
-{prodi if prodi else '[Prodi / Program Studi]'}
-{universitas if universitas else '[Universitas / Institusi]'}
+{jurusan if jurusan else '[Jurusan]'}
+{fakultas if fakultas else '[Fakultas]'}
+{universitas if universitas else '[Universitas]'}
 """
 
     st.markdown('\n')
