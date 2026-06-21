@@ -4,7 +4,7 @@ from assets import LOGO_DERMAGA_B64
 
 
 st.markdown(
-    '<meta name="google-site-verification" content="ISI_TOKEN_DARI_GOOGLE_DI_SINI" />',
+    '<meta name="google-site-verification" content="ttRf-6fP_HKFr5CiFzOukh_ibe-x5pReEmNwvau6ung" />',
     unsafe_allow_html=True
 )
 
