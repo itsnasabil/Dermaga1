@@ -7,6 +7,7 @@ Entry point: jalankan dengan  streamlit run app.py
 # File ini hanya sebagai entry alias jika user ingin run dari root folder
 
 import subprocess, sys, os
+<meta name="google-site-verification" content="ttRf-6fP_HKFr5CiFzOukh_ibe-x5pReEmNwvau6ung" />
 
 if __name__ == "__main__":
     # Ensure we run Halaman_Muka.py from this package directory
