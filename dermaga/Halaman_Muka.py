@@ -1,12 +1,8 @@
 import streamlit as st
-st.markdown(
-    '<meta name="google-site-verification" content="ISI_TOKEN_DARI_GOOGLE_DI_SINI" />',
-    unsafe_allow_html=True
-)
 from utils import set_page_config, render_header, render_footer
 from assets import LOGO_DERMAGA_B64
 
-
+<meta name="google-site-verification" content="ttRf-6fP_HKFr5CiFzOukh_ibe-x5pReEmNwvau6ung" />
 set_page_config()
 
 # ── PAGE CSS ─────────────────────────────────────────────────────────────────
