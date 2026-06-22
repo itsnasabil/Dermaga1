@@ -144,6 +144,7 @@ with cl:
             "Surat pengantar dari perguruan tinggi",
             "Formulir permohonan magang yang telah diisi & ditanda tangani",
             "Daftar riwayat hidup (CV) sesuai template",
+            "Portofolio sesuai ketentuan (utama + pendukung)",
             "Kartu Tanda Mahasiswa (KTM)",
         ]),
         ("#059669", "🎓 Persyaratan", [

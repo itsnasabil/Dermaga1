@@ -276,7 +276,7 @@ lampiran_data = [
      "CV lengkap dengan foto terbaru 3×4 cm dan pengalaman relevan"),
     
     ("Portofolio", 
-     "Mahasiswa TI: Program atau Aplikasi yang pernah dibuat | Mahasiswa non TI: Infografis atau videografi dengan data BPS Kota Semarang (sumber: semarangkota.bps.go.id - tabel statistik, berita resmi statistik, publikasi)"),
+     "Portofolio Utama : Semua Projek yang pernah dikerjakan (website/perhitungan statistik/dll)<br>Portofolio Pendukung : <br>Mahasiswa TI: Program atau Aplikasi yang pernah dibuat<br>Mahasiswa non TI: Infografis atau videografi dengan data BPS Kota Semarang (sumber: semarangkota.bps.go.id - tabel statistik, berita resmi statistik, publikasi). *catatan keduanya wajib."),
     
     ("Karya Infografis/Videografi Statistik", 
      "Menyertakan karya infografis, videografi, atau content statistik menggunakan data statistik Kota Semarang terbaru dari publikasi/tabel statistik di semarangkota.bps.go.id. Karya harus 100% hasil sendiri (bukan dari orang lain)"),

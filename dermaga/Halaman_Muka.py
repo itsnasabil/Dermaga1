@@ -2,6 +2,12 @@ import streamlit as st
 from utils import set_page_config, render_header, render_footer
 from assets import LOGO_DERMAGA_B64
 
+
+st.markdown(
+    '<meta name="google-site-verification" content="ISI_TOKEN_DARI_GOOGLE_DI_SINI" />',
+    unsafe_allow_html=True
+)
+
 set_page_config()
 
 # ── GOOGLE SITE VERIFICATION ──────────────────────────────────────────────────
